@@ -1,0 +1,133 @@
+@charset "UTF-8";
+ body{
+      font-family: 'Noto Sans KR', sans-serif;
+      position: relative;
+
+  }
+
+
+  
+/* 검색바*/
+  .search {
+      width: 150%;
+      position: relative;
+      display: flex;
+  }
+  #searchTermcss{
+      width: 100%;
+      border: solid 3px #FEB95E;
+      border-right: none;
+      padding: 5px;
+      height: 36px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #FEB95E;
+  }
+  #searchTermcss:focus{
+      color: #FEB95E;
+  }
+  .searchButton {
+      width: 40px;
+      height: 36px;
+      border: 1px solid #FEB95E;
+      background: #FEB95E;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+  }
+    /*Resize the wrap to see the search bar change!*/
+  .wrap{
+      width: 30%;
+      position: absolute;
+      margin-top: 8%;
+      left: 43%;
+      transform: translate(-50%, -50%);
+  }
+
+ /*검색팝업창*/
+  .tab-container {
+    visibility: hidden;
+    width: 100%;
+    position:absolute;
+    top: 36px;
+    background-color: #feb95ea8;
+    height : 200%;
+  }
+  .tab-content {
+    background-color: #feb95ea8;
+    position :absolute;
+    width: 100%;
+    left: 0%;
+    top: 100%; 
+    magin-left : 5%;
+  }
+  .searchbar {
+    position: relative;
+    z-index: 9; 
+  }
+
+  .fade{
+    position: relative;    
+    opacity: 10;
+    margin: 3% 3%;
+  }
+  .nav-tabs {
+    margin : 3% 3%;
+  }
+  .tab-content a {
+  	color : #565656;
+  }
+
+  
+
+
+
+
+
+
+/*6개짜리 리스트*/
+  #carouselExampleControls6 {
+    margin-top: 18%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .carousel-control {
+    margin-top: -1%;
+    line-height: 18px;
+  }
+  #carouselExampleControls3 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .row {
+  	margin-bottom : 2%
+  }
+  .carousel-control-prev {
+    left: -10%;
+    z-index : 5;
+    background-image: none;
+
+	}
+  .carousel-control-next {
+  	right: -10%;
+  }
+  .img-thumbnail{
+	margin-left : 15%;
+  }
+
+  	    
+ 
+  
+  .listtitle {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    color: #FEB95E;
+    margin-left: 7%;
+  }
+
+
+
+ 
+  

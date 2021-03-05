@@ -1,0 +1,50 @@
+body{
+    background-image: url(../images/login_background.jpg);
+    min-height: 650px;
+    max-height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.login{
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    /* background-color: ghostwhite; */
+    margin: auto;
+    background-color: hsla(40, 100%, 25%, 0.3);
+}
+
+.lo{
+    text-align: center;
+    margin-top: 20%;    
+}
+
+.find{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 35%;
+    color: black;
+}
+
+.ck{
+    text-align: center;
+}
+
+.ind{
+    margin-right: 7%;
+}
+
+.logoi{
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
