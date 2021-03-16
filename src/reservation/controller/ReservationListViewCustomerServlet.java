@@ -20,16 +20,10 @@ public class ReservationListViewCustomerServlet extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//Member member = request.getParameter("memberLoggedIn");
-		//String memberId = member.getMemberId();
-		
-		String memberId = "abc_123";
+		String memberId = request.getParameter("memberId");
 		List<Reservation> reservationListCustomer = reservationService.selectReservationListCustomer(memberId);
 		
+		response.setContentType("application/json; charset=utf-8");
 		new Gson().toJson(reservationListCustomer,response.getWriter());
-		
-		/* 박소연님 코드(필요시 주석 해제)
-		 * System.out.println(reservationListCustomer);
-		 */
 	}
 }

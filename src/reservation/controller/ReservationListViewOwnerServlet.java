@@ -21,16 +21,9 @@ public class ReservationListViewOwnerServlet extends HttpServlet{
 	
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//Member member = request.getParameter("memberLoggedIn");
-		//String memberId = member.getMemberId();
-		
-		String memberId = "honggd";
+		String memberId = request.getParameter("memberId");
+
 		List<Reservation> reservationListOwner = reservationService.selectReservationListOwner(memberId);
-		
 		new Gson().toJson(reservationListOwner,response.getWriter());
-		
-		/* 박소연님 코드(필요시 주석 해제)
-		 * System.out.println(reservationListOwner);
-		 */
 	}
 }

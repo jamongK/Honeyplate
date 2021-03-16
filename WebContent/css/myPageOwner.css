@@ -1,11 +1,10 @@
 *{
-    font-family: 'Noto Sans KR', sans-serif;
-
     border: none;
 }
 
 body{
      background-color: #f5f5f5 !important;
+     font-family: 'Noto Sans KR', sans-serif;
 }
 
 li{
@@ -144,18 +143,33 @@ a i{ color: #1f1f1f; }
     background-color: #22222213;
 }
 
+.update-p {
+    margin-top: 0;
+    text-align: right;
+    font-size: 14px;
+    color: red;
+    margin-right: 25px;
+    margin-bottom: 0;
+    display:none;
+}
+
+
+#update-email, #update-phone{
+	margin-bottom:10px;
+}
+
 .myinfo-update input[type=email]{
-    width: 200px;
+    width: 250px;
     height: 40px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .myinfo-update input[type=tel]{
-    width: 200px;
+    width: 260px;
     height: 40px;
     padding: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #update-btn{
@@ -188,6 +202,11 @@ a i{ color: #1f1f1f; }
     padding: 40px;
     text-align: left;
 }
+
+.alert-p{
+	display:block !important;
+}
+
 
 .form-group {
     padding: 10px;
@@ -225,20 +244,30 @@ a i{ color: #1f1f1f; }
     background-color: #ffa938;
 }
 
+
 .reservation-table{
-    background-color: rgba(218, 218, 218, 0.212);
     width: 55%;
-    height: 550px;
+    height: 700px;
     margin-top: 200px;
     border-radius: 10px;
     text-align: center;
     display:none;
 }
 
+.reservation-table table{
+	background-color: rgba(218, 218, 218, 0.212);
+	
+}
+
 .reservation-table .pagination {
     margin: 0 auto;
     color: #ffa938;
     margin-right: 200px;
+}
+
+.table-nav-container{
+	background-color: aqua;
+	width: 500px;
 }
 
 
@@ -259,7 +288,7 @@ a i{ color: #1f1f1f; }
 .reservation-list{
     background-color: rgba(218, 218, 218, 0.212);
     width: 50%;
-    height: 600px;
+    height: 650px;
     margin-top: 190px;
     border-radius: 10px;
     text-align: center;
@@ -324,11 +353,10 @@ a i{ color: #1f1f1f; }
     
 }
 
-.pageBar input:hover{
-    background-color: #ffa938;
+.pageBar{
+	width: 100%;
+	margin-top: 20px;
 }
-
-
 
 
 .withdrawal{

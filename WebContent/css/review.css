@@ -14,7 +14,7 @@ body{
   
 }
 .wrapper > .reivew_title{
-    background-color: rgb(231, 166, 62);
+    background-color: #FFA726;
     width: 350px; 
     height: 50px;
     border-radius: 5px;
@@ -42,7 +42,7 @@ input.star {
 
 label.star {
     float: right;
-    padding: 10px;
+    padding: 3px;
     font-size: 36px;
     color: #4A148C;
     transition: all .2s

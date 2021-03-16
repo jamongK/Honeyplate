@@ -1,5 +1,4 @@
 *{
-    font-family: 'Noto Sans KR', sans-serif;
     margin: 0;
     padding: 0;
     border: none;
@@ -81,12 +80,9 @@ a i{ color: #1f1f1f; }
     display: inline-block;
 }
 
-#store-img img{
-    display: inline-block;
-    width: 500px;
-    height: 320px;
-    margin: 0;
-    padding: 0;
+.w-100 {
+  width: 100% !important;
+  height: 55vh;
 }
 
 .info-container{

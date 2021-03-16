@@ -44,6 +44,55 @@
 
 
 
+/*검색팝업창*/
+  .tab-container {
+  /*
+  */
+    visibility: hidden;
+    width: 100%;
+    position:absolute;
+    top: 60px;
+    background-color: #FEB95E;
+    height : 100%;
+  }
+  .tab-content {
+    background-color: #FEB95E;
+    position :absolute;
+    width: 100%;
+    height: 220px;
+    left: 0%;
+    top: 100%; 
+    magin-left : 5%;
+    magin-top : 11px;
+  }
+  .searchbar {
+    position: relative;
+    z-index: 9; 
+  }
+
+  .fade{
+    position: relative;
+    padding: 0px 0;
+    margin: 1.5% 3%;
+  }
+  .nav-tabs {
+	margin-top: 10px;
+    margin-left: 30px;
+    border-bottom: 1px solid rgba(0,0,0,.1);;
+  }
+  .tab-content a {
+  	color : #565656;
+  }
+  .nav-link{
+    color: #828282;
+  }
+
+  
+
+
+
+
+
   /*검색결과 멘트*/
   #key-word {
     color: #FEB95E;
@@ -55,37 +104,52 @@
   
   
   /*검색리스트*/
-     .result-container .col{
-       position: relative; 
-       justify-content: center;
-       margin-reft : 10px;
-     }
+.result-container .col{
+  position: relative; 
+  justify-content: center;
+  margin-reft : 10px;
+}
 
-     .result-container .row{
-       margin-top: 30px;
-       margin-bottom: 30px;
-     }
-	.col{
-       margin:  0 auto;
-     }
-     .card {
-       justify-content: center;
-       align-content: center;
-       position: relative;
-     }
+.col{
+      margin:  0 auto;
+    }
+ .card {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   justify-content: center;
+   align-content: center;
+   position: relative;
+   margin-left: 90px;
+ }
+.card-img-top {
+	width: 150%;
+	width: 400px;
+    height: 300px;
+	}
+
+ .card-text{
+	 color : #000;
+	 text-decoration : none;
+ } 
+ p.card-text:hover{
+ 	color : #000;
+ 	text-decoration : none;
+ }
   
   
   
   /*페이지넘기는바*/    
-  #pagination {
-    width: 50%;
-    margin: 1% 44%;
-  }
-  .page-link {
-      color: #FEB95E;
-  }
-  .page-item.active .page-link {
-    background-color :#FEB95E;
-    border-color :#FEB95E;
-  }
-  
+ #pageBar {
+ text-align: center;
+ 
+ }
+ #pageBar>a {
+ color : #FEB95E;
+ margin : 5px;
+ font-size: 30px;
+ }
+ .cPage{
+ font-size: 40px;
+ margin : 5px;
+ color : #FEB95E;
+ }

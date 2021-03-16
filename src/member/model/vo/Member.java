@@ -13,14 +13,14 @@ public class Member {
 	private Date enrollDate;
 	private String quitYn;
 	private int noshowFreq;
-	private int corporateNo;
+	private String corporateNo;
 	
 	public Member() {
 		super();
 	}
 
 	public Member(String memberId, String memberPassword, String memberName, String memberRole, Date birthDay,
-			String email, String phone, Date enrollDate, String quitYn, int noshowFreq, int corporateNo) {
+			String email, String phone, Date enrollDate, String quitYn, int noshowFreq, String corporateNo) {
 		super();
 		this.memberId = memberId;
 		this.memberPassword = memberPassword;
@@ -34,6 +34,8 @@ public class Member {
 		this.noshowFreq = noshowFreq;
 		this.corporateNo = corporateNo;
 	}
+
+
 
 	public String getMemberId() {
 		return memberId;
@@ -115,11 +117,11 @@ public class Member {
 		this.noshowFreq = noshowFreq;
 	}
 
-	public int getCorporateNo() {
+	public String getCorporateNo() {
 		return corporateNo;
 	}
 
-	public void setCorporateNo(int corporateNo) {
+	public void setCorporateNo(String corporateNo) {
 		this.corporateNo = corporateNo;
 	}
 

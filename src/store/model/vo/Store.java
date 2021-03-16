@@ -14,7 +14,7 @@ public class Store {
 	private String breaktime_close;
 	private String menu;
 	private String parking;
-	private int reservation_num	;
+	private int reservation_num;
 	private int view_num;
 	private String info_del_yn;
 	public Store() {

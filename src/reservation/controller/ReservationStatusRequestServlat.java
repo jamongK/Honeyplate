@@ -22,13 +22,12 @@ public class ReservationStatusRequestServlat extends HttpServlet{
 		HttpSession session = request.getSession();
 		
 		int boardNo = Integer.parseInt(request.getParameter("resv-board-no"));
-		System.out.println("boardNo" + boardNo);
 		int result = reservationService.updateReservationStatus(boardNo);
 		String msg = result > 0 ? "예약이 수락되었습니다." : "예약 수락을 실패했습니다. 고객센터로 문의 바랍니다.";
 		
 		session.setAttribute("msg", msg);
 		session.setAttribute("showMenu", "reservationTable");
 		
-		response.sendRedirect(request.getContextPath() + "/myPageOwner.jsp");
+		response.sendRedirect(request.getContextPath() + "/member/mypageOwner");
 	}
 }

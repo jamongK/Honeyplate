@@ -12,17 +12,19 @@ public class Reservation {
 	private int adult; //어른 인원
 	private int child; //어린이 인원
 	private Timestamp rsvDate; //예약일
-	private int noShow; //예약자의 노쇼 횟수
+	private String noShowYn; //예약자의 노쇼 여부
 	private String reservationPhone; //예약자의 휴대폰 번호
 	private String depositYn; //결제여부  
 	private String reservationStatus; //예약 승인 거절 여부 
+	private int noShowFreq;
+
 	
 	public Reservation() {
 		super();
 	}
 
 	public Reservation(int reservationNo, String memberId, int boardNo, int adult, int child, Timestamp rsvDate,
-			int noShow, String reservationPhone, String depositYn, String reservationStatus) {
+			String noShowYn, String reservationPhone, String depositYn, String reservationStatus, int noShowFreq) {
 		super();
 		this.reservationNo = reservationNo;
 		this.memberId = memberId;
@@ -30,10 +32,11 @@ public class Reservation {
 		this.adult = adult;
 		this.child = child;
 		this.rsvDate = rsvDate;
-		this.noShow = noShow;
+		this.noShowYn = noShowYn;
 		this.reservationPhone = reservationPhone;
 		this.depositYn = depositYn;
 		this.reservationStatus = reservationStatus;
+		this.noShowFreq = noShowFreq;
 	}
 
 	public int getReservationNo() {
@@ -84,14 +87,6 @@ public class Reservation {
 		this.rsvDate = rsvDate;
 	}
 
-	public int getNoShow() {
-		return noShow;
-	}
-
-	public void setNoShow(int noShow) {
-		this.noShow = noShow;
-	}
-
 	public String getReservationPhone() {
 		return reservationPhone;
 	}
@@ -115,15 +110,31 @@ public class Reservation {
 	public void setReservationStatus(String reservationStatus) {
 		this.reservationStatus = reservationStatus;
 	}
+	
+	public int getNoShowFreq() {
+		return noShowFreq;
+	}
+
+	public void setNoShowFreq(int noShowFreq) {
+		this.noShowFreq = noShowFreq;
+	}
+
+	public String getNoShowYn() {
+		return noShowYn;
+	}
+
+	public void setNoShowYn(String noShowYn) {
+		this.noShowYn = noShowYn;
+	} 
 
 	@Override
 	public String toString() {
 		return "Reservation [reservationNo=" + reservationNo + ", memberId=" + memberId + ", boardNo=" + boardNo
-				+ ", adult=" + adult + ", child=" + child + ", rsvDate=" + rsvDate + ", noShow=" + noShow
+				+ ", adult=" + adult + ", child=" + child + ", rsvDate=" + rsvDate + ", noShowYn=" + noShowYn
 				+ ", reservationPhone=" + reservationPhone + ", depositYn=" + depositYn + ", reservationStatus="
-				+ reservationStatus + "]";
+				+ reservationStatus + ", noShowFreq=" + noShowFreq + "]";
 	}
-	
+
 	public String timestampToString(){
 		java.util.Date date= new Date(rsvDate.getTime());
 		Calendar calendar = Calendar.getInstance();
