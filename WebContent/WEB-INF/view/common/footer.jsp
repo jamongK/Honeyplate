@@ -7,7 +7,7 @@
             <h2>Honey Plate</h2>
         </div>
         <div class="footer-menu">
-            <a href="#" style="margin-right: 15px;">이용약관</a>
+            <a href="#" style="margin-left: 450px; margin-right: 15px;">이용약관</a>
             <a href="#" style="margin-left: 15px; margin-right: 15px;">커뮤니티 가이드라인</a>
             <a href="#" style="margin-left: 15px; margin-right: 15px;">문의하기</a>
             <a href="#" style="margin-left: 15px;">공지하기</a>

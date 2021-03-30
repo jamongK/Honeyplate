@@ -253,11 +253,11 @@ footer {
 }
 
 .footer-menu a {
+    margin-left: 450px;
     color: #fff;
     font-family: 'Noto Sans KR', sans-serif;
     position: relative;
     top: 90px;
-    margin-left: 450px;
 }
 
 .footer-menu > a:hover {
